@@ -12,7 +12,7 @@ There are many libraries which allow developers to integrate cryptographic primi
 
 A common theme with these libraries is that they are largely targeting primitives which are widely used and thus are not fully featured ;certainly not on the bleeding edge of newer applications of applied cryptography. Hence you might find one library implements ECDSA signatures but may not have BLS signatures or might not support **weighted threshold** signing. This forces individual developers/projects to start rolling out their own implementations/libraries , which are targeted for their own use cases.&#x20;
 
-One might ask why isn’t there isn’t a one stop shop for primitives ? There is a good reason for this — writing cryptography libraries is a hard complex task. Most libraries like [boost](https://www.boost.org/) also avoid adding newer primitives or lack a cryptographic module as they are harder to review , and are not yet sold on the stability as the libraries need to evolve/patch at a quicker pace than they want to release.
+One might ask why isn’t there isn’t a one-stop shop for primitives ? There is a good reason for this — writing cryptography libraries is a hard complex task. Most libraries like [boost](https://www.boost.org/) also avoid adding newer primitives or lack a cryptographic module as they are harder to review , and are not yet sold on the stability as the libraries need to evolve/patch at a quicker pace than they want to release.
 
 The current web3 landscape moves very quick and there is a constant demand & need to use different schemes, curves, signing primitives etc. Zero knowledge development is even harder to crack due to limited set of libraries.
 

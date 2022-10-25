@@ -11,7 +11,7 @@
         * [Algorithms](crypto3/modules/algebra/references/algorithms.md)       
       * [Implementation](crypto3/modules/algebra/implementation.md)
       * [References](crypto3/modules/algebra/references/README.md)
-    * [block](crypto3/modules/block.md)
+    * [block](crypto3/modules/block/README.md)
   * [Examples](crypto3/examples/README.md)
     * [BLS Signature](crypto3/examples/bls-signature.md)
     * [BLS Weighted Threshold signature](crypto3/examples/bls-weighted-threshold-signature.md)
