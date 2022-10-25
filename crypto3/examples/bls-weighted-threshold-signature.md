@@ -1,2 +1,0 @@
-# BLS Weighted Threshold signature
-
