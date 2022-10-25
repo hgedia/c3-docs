@@ -4,9 +4,9 @@
 
 We will next set up a development environment for crypto3 projects and be able to run an example.This will enable you to test ideas quickly and further explore the API’s of the suite. The example will use a generic setup described above.
 
-#### Install dependencies
+## Install dependencies
 
-#### Linux
+### Linux
 
 The following dependencies need to be installed.
 
@@ -41,7 +41,7 @@ root├── libs : submodule including the repository for crypto3 suite├─�
 
 #### Installing and testing scaffold
 
-* Clone submodules recursively
+* Clone sub-modules recursively
 
 ```
 git submodule update --init --recursive
