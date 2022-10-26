@@ -5,6 +5,7 @@
 ## Guides
 
 * [Quickstart](guides/quickstart.md)
+* [Installation](guides/installation.md)
 
 ## Modules
 
