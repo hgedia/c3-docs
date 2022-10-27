@@ -20,15 +20,36 @@ Circuits are constraints which are usually presented to the user in a seralised 
 
 Once the circuit is deserialied , it is ready to be instantiated. The instantiation of a circuit takes public parameters and witness parameters (private data) and this generates an execution trace (assignment table).
 
+```shell
+//pseudocode
+zkinterpreter circuit.bytecode -i run_time_input.json -o circuit.bin -e assignment_table.bin 
+```
+
 
 
 ### Step 3: Pre-processing data
 
 Once the assignment table is generated , the prover is required to pre-process some data out of the execution trace. This step optimises the time required for verification.
 
+```
+// Some code
+```
+
 ### Step 4: Generating Proof & Marshalling
 
 The next step is to generate the proof via the API in the SDK. The proof once generated can be marshalled along with the pre-processed data from step 2. Marshalling allows for transferring proof between two entities
+
+```cpp
+// Pseudocode
+main(){
+   zk::plonk::circuit circuit_instance= marshalling::pack("circuit.bin");
+   zk::plonk::assignment assignment_instance= marshalling::pack("assignment_table.bin");
+   placeholder_params = ...;
+   preprocessed_data = placeholder::preprocess(circuit_instance, assignment_instance);
+   proof = placeholder::prove(circuit_instance, assignment_instance, preprocessed_data);
+   std::cout << marshalling::pack(proof);
+} 
+```
 
 
 
@@ -36,33 +57,16 @@ The next step is to generate the proof via the API in the SDK. The proof once ge
 
 The last step is verifying the proof. The verifier can acces the marshalled blob and de-seralise the data. Once the proof and the pre-processed data is obtained , the user can check the validity of the proof.
 
-
-
-
-
-
-
-1. Build the circuit (aka set of constraints) and the execution trace (priv+pub assignment table) by yourself or by zkllvm compiler- [https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L124](https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L124)
-2. Preprocessing - [https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L151-L158](https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L151-L158)
-3. Prove - [https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L179](https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L179)
-4. Marshalling: {proof + pub preprocessed}->byte blob, send it to some storage
-5. Download the byte blob, use marshalling: byte blob -> {proof + pub preprocessed}
-6. Verify - [https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L182](https://github.com/NilFoundation/crypto3-blueprint/blob/master/test/test\_plonk\_component.hpp#L182)
-
-zkllvm input.cpp -o circuit.bytecode - bytecode circuit IR without the execution trace (edited) [12:45](https://nilfoundation.slack.com/archives/D03QHPTDYAH/p1666784709553799)zkinterpreter circuit.bytecode -i run\_time\_input.json -o circuit.bin -e assignment\_table.bin - circuit and execution trace are generated (edited) [12:46](https://nilfoundation.slack.com/archives/D03QHPTDYAH/p1666784815288149)prover:main(){\
-&#x20;  zk::plonk::circuit circuit\_instance= marshalling::pack("circuit.bin");\
-&#x20;  zk::plonk::assignment assignment\_instance= marshalling::pack("assignment\_table.bin");   placeholder\_params = ...;   preprocessed\_data = placeholder::preprocess(circuit\_instance, assignment\_instance);   proof = placeholder::prove(circuit\_instance, assignment\_instance, preprocessed\_data);   std::cout << marshalling::pack(proof);\
-} (edited)&#x20;
-
-
-
-
-
-verifier: main(){ std:cin >> proof\_bin; std::cin >> pub\_preprocessed\_data.bin; proof = marshalling::pack(proof\_bin); pub\_preprocessed\_data = marshalling::pack(pub\_preprocessed\_data.bin) placeholder\_params = ...; bool verification\_result = placeholder::verifier(prrof, pub\_preprocessed\_data); assert( verification\_result); } (edited)
-
-
-
-
-
-
+```cpp
+// Pseudcode
+main(){
+   std:cin >> proof_bin;
+   std::cin >> pub_preprocessed_data.bin;
+   proof  = marshalling::pack(proof_bin);
+   pub_preprocessed_data  = marshalling::pack(pub_preprocessed_data.bin)
+   placeholder_params = ...;
+   bool verification_result = placeholder::verifier(prrof, pub_preprocessed_data);
+   assert(   verification_result);
+}
+```
 
