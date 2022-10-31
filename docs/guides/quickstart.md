@@ -4,9 +4,7 @@ description: Scaffold project using crypto3 library
 
 # Quickstart (Scaffold)
 
-***
-
-We will next set up a development environment for crypto3 projects and be able to run an example.This will enable you to test ideas quickly and further explore the API’s of the suite. The example will use a generic setup described above.
+In this guide we will set up a development environment for crypto3 projects and be able to run an example.This will enable you to test ideas quickly and further explore the API’s of the suite. The example will use a generic setup described above.
 
 ## Installation
 
