@@ -4,7 +4,9 @@ description: Scaffold project using crypto3 library
 
 # Quickstart (Scaffold)
 
-In this guide we will set up a development environment for crypto3 projects and be able to run an example.This will enable you to test ideas quickly and further explore the API’s of the suite. The example will use a generic setup described above.
+***
+
+We will next set up a development environment for crypto3 projects and be able to run an example.This will enable you to test ideas quickly and further explore the API’s of the suite. The example will use a generic setup described above.
 
 ## Installation
 
@@ -25,7 +27,7 @@ sudo apt install build-essential libssl-dev libboost-all-dev cmake clang git
 #### Get crypto3 scaffold
 
 ```shell
-git clone https://github.com/NilFoundation/crypto3-scaffold.git
+git clone https://github.com/NilFoundation/crypto3-scaffold.git;
 cd crypto3-scaffold
 ```
 
@@ -52,7 +54,7 @@ git submodule update --init --recursive
 * Build : The project is built using cmake system.
 
 ```shell
-mkdir build && cd build && cmake .. && make
+mkdir build && cd buildcmake .. && make
 ```
 
 * Run executable
@@ -65,4 +67,4 @@ You should see the output `Verified signature successfully` on your console.
 
 ## Conclusion
 
-Congratulations! You now have the environment to start experimenting with the crypto3 suite. You can now explore  [modules](broken-reference) in the suite.Modules also have examples/tests in their repositories ex : [algebra example](https://github.com/NilFoundation/crypto3-algebra/tree/master/example).
+Congratulations! You now have the environment to start experimenting with the crypto3 suite. You can now explore other [modules](https://github.com/NilFoundation/crypto3/blob/master/docs/manual/modules.html) in the suite.Modules also have examples/tests in their repositories ex : [algebra example](https://github.com/NilFoundation/crypto3-algebra/tree/master/example).
