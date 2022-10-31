@@ -6,7 +6,7 @@ description: '=nil; Foundation''s Cryptography Suite'
 
 ## What?
 
-Crypto3 is a cryptography suite of libraries written in modern C++.&#x20;
+Crypto3 is an open source cryptography suite of libraries written in modern C++ by =nil;Foundation. &#x20;
 
 It is a suite, which consists of over 17 libraries, representing every major field of modern applied cryptography. It comprises of : VDFs, signature schemes (including threshold with various DKGs), zero-knowledge proof systems (R1CS and PLONK-based ones), more traditional cryptography notions (block ciphers, hashes, message authentication codes, key derivation functions etc).
 
@@ -29,10 +29,10 @@ The current web3 landscape moves very quick and there is a constant demand & nee
 
 \=nil;Foundation’s crypto3 library has been in development since 2018 & aims to fill this gap.&#x20;
 
-crypto3 is used extensively in all applications which =nil;Foundation is developing. This includes our ZK-proof system placeholder. Database management protocol and ZK-bridges and ZK-LLVM.
+crypto3 is also used extensively in all applications which =nil;Foundation is developing. This includes our ZK-proof system placeholder. Database management protocol and ZK-bridges and ZK-LLVM. Thus we will continue to drive the project and maintain it at the same time it is open for contributions and is available under [MIT](https://github.com/NilFoundation/crypto3/blob/master/LICENSE) licence
 
 The repository for crypto3 library is located [here](https://github.com/NilFoundation/crypto3). The suite is highly modular and all components have their own repository ex : [algebra](https://github.com/NilFoundation/crypto3-algebra/), [block](https://github.com/NilFoundation/crypto3-block), [pubkey](https://github.com/NilFoundation/crypto3-pubkey). The core repository is an umbrella repository which adds all the modules under it as sub-modules.
 
 ## How?
 
-Please take a look at [Quickstart](guides/quickstart.md) guide or [Installation](guides/installation.md) guide.
+In order to start using the suite, please take a look at [Quickstart](guides/quickstart.md) guide or [Installation](guides/installation.md) guide.
