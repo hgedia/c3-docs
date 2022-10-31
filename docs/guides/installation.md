@@ -39,16 +39,10 @@ git submodule add https://github.com/NilFoundation/crypto3-<lib>.git <dir>
 
 ## Include
 
-To compile anything in crypto3, you need a directory containing the crypto3 sub-module directory in your `#include` path. Since all of crypto3 header files have the .hpp extension, and live in the `crypto3\<lib>` sub-directory of the crypto3 root, your crypto3 include directives will look like:
+To compile anything in crypto3, you need a directory containing the crypto3 sub-module directory in your `#include` path. Since all of crypto3 header files have the `.hpp` extension, and live in the `crypto3\<lib>` sub-directory of the crypto3 root, your crypto3 include directives will look like
 
 ```cpp
 #include <nil/crypto3/pubkey/algorithm/sign.hpp>
-```
-
-or
-
-```cpp
-#include "nil/crypto3/pubkey/algorithm/sign.hpp"
 ```
 
 ## CMake

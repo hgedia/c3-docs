@@ -6,7 +6,10 @@
 
 * [Quickstart (Scaffold)](guides/quickstart.md)
 * [Installation](guides/installation.md)
-* [Configuring JetBrains Clion](guides/configuring-jetbrains-clion.md)
+* [IDE Configuration](guides/ide-configuration/README.md)
+  * [VSCode](guides/ide-configuration/vscode.md)
+  * [CLion](guides/ide-configuration/clion.md)
+  * [Sublime Text](guides/ide-configuration/sublime-text.md)
 * [Debugging](guides/debugging.md)
 
 ## Modules
