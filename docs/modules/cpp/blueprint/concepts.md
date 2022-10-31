@@ -1,6 +1,6 @@
 # Concepts Hello world# {#component_concepts}
 
-A hello hello!! ```circuit``` is defined by ```Blueprint``` and ```Blueprint assignment table``` (contains ```Blueprint public assignment table``` and ```Blueprint private assignment table```) instances.
+A ```circuit``` is defined by ```Blueprint``` and ```Blueprint assignment table``` (contains ```Blueprint public assignment table``` and ```Blueprint private assignment table```) instances.
 It consist of one or multiple components putted on these two.
 While ```Blueprint``` holds information about the circuit itself, its gates, constraints and other fixed expressions, ```Blueprint assignment table``` contains public and private assignments needed by zk-SNARK system.
 
