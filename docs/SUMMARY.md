@@ -15,6 +15,14 @@
 ## Modules
 
 * [C++](modules/cpp/README.md)
+  * [algebra](modules/cpp/algebra/README.md)
+    * [Manual](modules/cpp/algebra/manual/README.md)
+      * [Curves](modules/cpp/algebra/manual/curves.md)
+      * [Matrix](modules/cpp/algebra/manual/matrix.md)
+      * [Multi-Exponentiation](modules/cpp/algebra/manual/multi-exponentiation.md)
+      * [Algorithms](modules/cpp/algebra/manual/algorithms.md)
+    * [Implementation](modules/cpp/algebra/implementation.md)
+    * [References](modules/cpp/algebra/references.md)
   * [block](modules/cpp/block/README.md)
     * [concepts](modules/cpp/block/concepts.md)
     * [extension](modules/cpp/block/extension.md)
@@ -84,14 +92,6 @@
     * [concepts](modules/cpp/zk/concepts.md)
     * [implementation](modules/cpp/zk/implementation.md)
     * [manual](modules/cpp/zk/manual.md)
-  * [algebra](modules/cpp/algebra/README.md)
-    * [Manual](modules/cpp/algebra/manual/README.md)
-      * [Curves](modules/cpp/algebra/manual/curves.md)
-      * [Matrix](modules/cpp/algebra/manual/matrix.md)
-      * [Multi-Exponentiation](modules/cpp/algebra/manual/multi-exponentiation.md)
-      * [Algorithms](modules/cpp/algebra/manual/algorithms.md)
-    * [Implementation](modules/cpp/algebra/implementation.md)
-    * [References](modules/cpp/algebra/references.md)
 
 ## Examples
 
