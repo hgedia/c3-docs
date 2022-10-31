@@ -17,6 +17,10 @@ crypto3 should be added to a project as a git [sub-module](https://git-scm.com/b
 The suite is used as a header-only and is currently statically linked. Future versions will allow dynamic linking.
 {% endhint %}
 
+{% hint style="info" %}
+The suite is compatible with x86 and ARM architectures
+{% endhint %}
+
 ### Generic
 
 Generic usage of cryptography suite consists of all modules listed [here](https://github.com/orgs/NilFoundation/teams/nil-crypto3/repositories) at team repository.
