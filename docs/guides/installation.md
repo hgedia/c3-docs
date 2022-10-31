@@ -5,7 +5,9 @@ Cryptography suite can be used as follows:
 1. Generic.
 2. Selective.
 
+{% hint style="info" %}
 The suite is used as a header-only and is currently statically linked. Future versions will allow dynamic linking.
+{% endhint %}
 
 ## **Generic**
 
