@@ -14,10 +14,8 @@ We will next set up a development environment for crypto3 projects and be able t
 
 The following dependencies need to be installed.
 
-> [Boost](https://www.boost.org/) >= 1.74.0
-
+> [boost](https://www.boost.org/) >= 1.74.0
 > [cmake](https://cmake.org/) >= 3.5
-
 > [clang](https://clang.llvm.org/) >= 14.0.6
 
 Please execute the below to fetch the packages required or adapt the command to your package manager.
