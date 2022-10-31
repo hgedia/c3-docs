@@ -52,7 +52,7 @@ git submodule update --init --recursive
 * Build : The project is built using cmake system.
 
 ```shell
-mkdir build && cd buildcmake .. && make
+mkdir build && cd build && cmake .. && make
 ```
 
 * Run executable
