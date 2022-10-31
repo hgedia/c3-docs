@@ -27,7 +27,7 @@ sudo apt install build-essential libssl-dev libboost-all-dev cmake clang git
 #### Get crypto3 scaffold
 
 ```shell
-git clone https://github.com/NilFoundation/crypto3-scaffold.git;
+git clone https://github.com/NilFoundation/crypto3-scaffold.git
 cd crypto3-scaffold
 ```
 
