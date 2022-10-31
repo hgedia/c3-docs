@@ -79,7 +79,6 @@
     * [concepts](modules/cpp/zk/concepts.md)
     * [implementation](modules/cpp/zk/implementation.md)
     * [manual](modules/cpp/zk/manual.md)
-    *
   * [algebra](modules/cpp/algebra/README.md)
     * [Manual](modules/cpp/algebra/manual/README.md)
       * [Curves](modules/cpp/algebra/manual/curves.md)
