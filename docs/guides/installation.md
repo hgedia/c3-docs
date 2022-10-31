@@ -15,7 +15,7 @@ The suite is used as a header-only and is currently statically linked. Future ve
 
 ## **Generic**
 
-Generic usage of cryptography suite consists of all modules available at `` [`GitHub =nil; Crypto3 Team Repositories`](https://github.com/orgs/NilFoundation/teams/nil-crypto3/repositories)`.`
+Generic usage of cryptography suite consists of all modules available at [crypto3 team repo](https://github.com/orgs/NilFoundation/teams/nil-crypto3/repositories)
 
 The generic module can be added to your c++ project as follows
 
@@ -30,5 +30,5 @@ Developer can select to include a one or more modules to reduce the sources of r
 Selective modules can be added to your project as follows:
 
 ```shell
-git submodule add https://github.com/NilFoundation/crypto3-<lib>.git <dir>shell
+git submodule add https://github.com/NilFoundation/crypto3-<lib>.git <dir>
 ```
