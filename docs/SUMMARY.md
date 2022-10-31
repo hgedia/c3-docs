@@ -6,6 +6,8 @@
 
 * [Quickstart (Scaffold)](guides/quickstart.md)
 * [Installation](guides/installation.md)
+* [Configuring JetBrains Clion](guides/configuring-jetbrains-clion.md)
+* [Debugging](guides/debugging.md)
 
 ## Modules
 
