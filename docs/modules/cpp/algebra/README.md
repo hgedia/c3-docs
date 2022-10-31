@@ -1,14 +1,16 @@
 ---
-description: Public key library
+description: Crypto3.Algebra module
 ---
 
 # algebra
 
-## Introduction
+Crypto3.Algebra library provides a set algebraic constructions being used mostly for public-key schemes. The following are the building blocks for the module. Please see below for how to use the API's.
 
-Crypto3.Algebra library extends the =nil; Foundation's cryptography suite and provides a set algebraic constructions being used mostly for public-key schemes implemented in way C++ standard library implies: concepts, algorithms, predictable behavior, latest standard features support and clean architecture without compromising security and performance.
-
-The library contains numerous elliptic curves ,algorithms for curve operations (ex : add,mul), field types, matrix & common matrix transformation operations.
+* [Curves](manual/curves.md)&#x20;
+* [Pairings](manual/pairings.md)
+* [Matrix](manual/matrix.md)
+* [Multi-Exponentiation](manual/multi-exponentiation.md)
+* [Algorithms](manual/algorithms.md)
 
 
 

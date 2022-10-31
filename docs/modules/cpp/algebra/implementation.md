@@ -1,8 +1,6 @@
 # Implementation
 
-## Implementation # <a href="#algebra_impl" id="algebra_impl"></a>
-
-@tableofcontents
+## Implementation  <a href="#algebra_impl" id="algebra_impl"></a>
 
 The key idea of `algebra` is to provide useful interfaces for basic cryptography math. It's based on NilFoundation fork of Boost.Multiprecision so that it can be used with boost cpp\_int, gmp or other backends.
 
