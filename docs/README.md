@@ -4,7 +4,7 @@ description: '=nil; Foundation''s Cryptography Suite'
 
 # Crypto3
 
-## **Why crypto3**?
+## **Why**&#x20;
 
 There are many libraries which allow developers to integrate cryptographic primitives in their applications. Some well known examples of this include [crypto++](https://www.cryptopp.com/) , [libsodium](https://github.com/jedisct1/libsodium), [OpenSSL](https://github.com/openssl/openssl) ,[Tink](https://github.com/google/tink).
 

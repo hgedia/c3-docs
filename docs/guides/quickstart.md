@@ -1,4 +1,8 @@
-# Quickstart
+---
+description: Scaffold project using crypto3 library
+---
+
+# Quickstart (Scaffold)
 
 ***
 

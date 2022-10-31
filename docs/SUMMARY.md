@@ -4,7 +4,7 @@
 
 ## Guides
 
-* [Quickstart](guides/quickstart.md)
+* [Quickstart (Scaffold)](guides/quickstart.md)
 * [Installation](guides/installation.md)
 
 ## Modules
@@ -96,6 +96,6 @@
   * [BLS Weighted Threshold signature](examples/examples/bls-weighted-threshold-signature.md)
   * [First zk Component](examples/examples/first-zk-component.md)
 
-## ZKLLVM
+## ZK
 
-* [Proof Pipeline](zkllvm/proof-pipeline.md)
+* [Proof Pipeline](zk/proof-pipeline.md)
