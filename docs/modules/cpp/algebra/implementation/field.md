@@ -23,21 +23,13 @@ For example, this is the tower used for `bn128` and `bls12_381` operations and p
 
 Fp -> Fp2 -> Fp6 -> Fp12;
 
-@dot digraph fp12\_2over3over2\_arch { bgcolor="#151515" rankdir="TB" node \[shape="box"]
-
-a \[label="Fp12" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; b \[label="Fp6" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; c \[label="Fp2" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; d \[label="Fp" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"];
-
-a -> b; b -> c; c -> d; } @enddot
+![](<../../../../.gitbook/assets/image (4).png>)
 
 There are also the following towers implemented:
 
 Fp -> Fp3 -> Fp6 -> Fp12;
 
-@dot digraph fp12\_2over2over3\_arch { bgcolor="#151515" rankdir="TB" node \[shape="box"]
-
-a \[label="Fp12" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; b \[label="Fp6" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; c \[label="Fp3" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; d \[label="Fp"color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"];
-
-a -> b; b -> c; c -> d; } @enddot
+![](../../../../.gitbook/assets/image.png)
 
 Fp -> Fp2 -> Fp4 -> Fp12;
 
