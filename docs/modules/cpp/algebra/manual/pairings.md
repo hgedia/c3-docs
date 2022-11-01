@@ -1,6 +1,6 @@
 # Pairings
 
-Bilinear pairing groups&#x20;
+Bi-linear pairing groups&#x20;
 
 ### Usage
 

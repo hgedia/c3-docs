@@ -16,8 +16,9 @@
 
 * [C++](modules/cpp/README.md)
   * [algebra](modules/cpp/algebra/README.md)
-    * [Manual](modules/cpp/algebra/manual/README.md)
-      * [Curves](modules/cpp/algebra/manual/curves.md)
+    * [manual](modules/cpp/algebra/manual/README.md)
+      * [Elliptic Curves](modules/cpp/algebra/manual/curves.md)
+      * [Field](modules/cpp/algebra/manual/field.md)
       * [Pairings](modules/cpp/algebra/manual/pairings.md)
       * [Matrix](modules/cpp/algebra/manual/matrix.md)
       * [Multi-Exponentiation](modules/cpp/algebra/manual/multi-exponentiation.md)

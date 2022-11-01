@@ -2,11 +2,9 @@
 description: Crypto3.Algebra Elliptic curves
 ---
 
-# Curves
+# Elliptic Curves
 
-## Elliptic curves
-
-The following curves are implemented&#x20;
+The following elliptic curves are implemented&#x20;
 
 * Barreto-Naehrig
 * Babyjubjub
@@ -28,7 +26,7 @@ The following curves are implemented&#x20;
 * vesta
 * X9.62
 
-### Usage
+## Usage
 
 Curves are defined under the namespace `nil::crypto3::algebra::curves` A curve can be instantiated as follows and by including the relevant header.
 
@@ -38,27 +36,9 @@ curves::bls12<377>
 
 Curves encompass one or more `field` types definitions `typedef` which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
 
-## Field Type
-
-`field` type is a generic type which is specialised for the above curves. This type can be extended to any curves and operators are overloaded to perform arithmetic over their domain. They are optimised for arithmetic in the finite field.
-
-### Usage
-
-A field can be instantiated as
-
-```
-field<254> //254 - is the Modulus Bits
-```
-
-Specialised for curves as base fields and scalar fields are usually defined as
-
-```
-//fields/secp/secp_k1
-struct secp_k1_base_field<256> : public field<256>
-struct secp_k1_scalar_field<256> : public field<256>
-```
-
 ## Example
+
+The class below describes a BLS curve which accepts a template parameter for variants. &#x20;
 
 ```cpp
 template<std::size_t Version>
@@ -87,4 +67,9 @@ typedef bls12<381> bls12_381;
 typedef bls12<377> bls12_377;
 
 ```
+
+We define a number of types which will associate the class with the domain & field. The important types are :&#x20;
+
+* `base_field_type :`  TODO
+* `scalar_field_type :` TODO
 
