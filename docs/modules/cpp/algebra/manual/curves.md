@@ -36,7 +36,7 @@ Curves are defined under the namespace `nil::crypto3::algebra::curves` A curve c
 curves::bls12<377>
 ```
 
-Curves encompass one or more `field` types which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
+Curves encompass one or more `field` types definitions `typedef` which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
 
 ## Field Type
 
@@ -57,3 +57,34 @@ Specialised for curves as base fields and scalar fields are usually defined as
 struct secp_k1_base_field<256> : public field<256>
 struct secp_k1_scalar_field<256> : public field<256>
 ```
+
+## Example
+
+```cpp
+template<std::size_t Version>
+class bls12 {
+
+	typedef detail::bls12_types<Version> policy_type;
+
+public:
+	typedef typename policy_type::base_field_type base_field_type;
+	typedef typename policy_type::scalar_field_type scalar_field_type;
+
+	template<typename Coordinates = coordinates::jacobian_with_a4_0,
+			 typename Form = forms::short_weierstrass>
+	using g1_type = typename detail::bls12_g1<Version, Form, Coordinates>;
+
+	template<typename Coordinates = coordinates::jacobian_with_a4_0,
+			 typename Form = forms::short_weierstrass>
+	using g2_type = typename detail::bls12_g2<Version, Form, Coordinates>;
+
+	constexpr static const bool has_affine_pairing = false;
+
+	typedef typename policy_type::gt_field_type gt_type;
+};
+
+typedef bls12<381> bls12_381;
+typedef bls12<377> bls12_377;
+
+```
+
