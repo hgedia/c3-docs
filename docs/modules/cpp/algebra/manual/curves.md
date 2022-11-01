@@ -28,13 +28,16 @@ The following elliptic curves are implemented&#x20;
 
 ## Usage
 
-Curves are defined under the namespace `nil::crypto3::algebra::curves` A curve can be instantiated as follows and by including the relevant header.
+Curves are defined under the namespace `nil::crypto3::algebra::curves`&#x20;
 
-```
-curves::bls12<377>
+A curve type is generally passed as a parameter to a cryptographic scheme (TODO : Link).  The template type can be instantiated as follows:
+
+```cpp
+using curve_bls_381 = curves::bls12_381; // As an existing typedef 
+using curve_bls_377 = curves::bls12<377> // Explicityly passing variant
 ```
 
-Curves encompass one or more `field` types definitions `typedef` which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
+Curves encompass one or more `field` types definitions (via `typedef` )which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
 
 ## Example
 

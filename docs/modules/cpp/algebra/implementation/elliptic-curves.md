@@ -8,11 +8,7 @@ Curves were build upon the `fields`. So it basically consist of several parts li
 2. Curve g1, g2 group element arithmetic
 3. Basic curve policies
 
-@dot digraph curves\_arch { bgcolor="#151515" rankdir="TB" node \[shape="box"]
-
-a \[label="Curve Policies" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref curve\_policies"]; b \[label="Curve Element Algorithms" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref curve\_element\_algorithms"]; c \[label="Basic curve policies" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref basic\_curve\_policies"];
-
-a -> b; b -> c; } @enddot
+![](<../../../../.gitbook/assets/image (1).png>)
 
 ### Curve Policies <a href="#curve_policies" id="curve_policies"></a>
 
