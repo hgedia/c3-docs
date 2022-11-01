@@ -13,7 +13,6 @@ The following elliptic curves are implemented&#x20;
 * [Curve25519](https://datatracker.ietf.org/doc/html/rfc7748#section-4.1)
 * ed25519
 * Edwards
-* FRP?? TODO
 * GOST
 * Jubjub
 * mnt4/mnt6
