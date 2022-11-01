@@ -22,7 +22,6 @@
       * [Pairings](modules/cpp/algebra/manual/pairings.md)
       * [Matrix](modules/cpp/algebra/manual/matrix.md)
       * [Multi-Exponentiation](modules/cpp/algebra/manual/multi-exponentiation.md)
-      * [Algorithms](modules/cpp/algebra/manual/algorithms.md)
     * [Implementation](modules/cpp/algebra/implementation/README.md)
       * [Elliptic Curves](modules/cpp/algebra/implementation/elliptic-curves.md)
       * [Field](modules/cpp/algebra/implementation/field.md)

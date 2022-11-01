@@ -10,7 +10,7 @@ Crypto3.Algebra library provides a set algebraic constructions being used mostly
 * [Pairings](manual/pairings.md)
 * [Matrix](manual/matrix.md)
 * [Multi-Exponentiation](manual/multi-exponentiation.md)
-* [Algorithms](manual/algorithms.md)
+* [Algorithms](broken-reference)
 
 
 

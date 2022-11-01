@@ -1,24 +1,24 @@
 # Field
 
-`field` type is a generic type which is an extension of boost::multiplication .They are extended to a particular curves and operators are overloaded to perform arithmetic over their domain. They are optimised for arithmetic in the finite field.
+`field` type is a generic type which is an extension of `boost::multiprecision` . It is usually specialised for a particular curve and operators are overloaded to perform arithmetic over their domain. They are optimised for arithmetic in the finite field.
 
 ## Usage
 
 A field can be instantiated as
 
-```
+```cpp
 field<254> //254 - is the modulus Bits
 ```
 
 Specialised for curves as base fields and scalar fields are usually defined as
 
-```
+```cpp
 //fields/secp/secp_k1
 struct secp_k1_base_field<256> : public field<256>
 struct secp_k1_scalar_field<256> : public field<256>
 ```
 
-## Example
+## Example (TO REMOVE)
 
 Below we see a specialisation of a field type to a bls12\_base\_field.
 
