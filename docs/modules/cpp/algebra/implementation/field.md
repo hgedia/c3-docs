@@ -9,7 +9,7 @@ Fields are a wrapper over `multiprecision` module and concept of `modular_adapto
 3. Field Parameters
 4. Field Element Algorithms, which are actually wrappers over the `multiprecision` operations.
 
-![](<../../../../.gitbook/assets/image (1).png>)
+![](<../../../../.gitbook/assets/image (1) (1).png>)
 
 ### Field Policies  <a href="#field_policies" id="field_policies"></a>
 
@@ -23,7 +23,7 @@ For example, this is the tower used for `bn128` and `bls12_381` operations and p
 
 Fp -> Fp2 -> Fp6 -> Fp12;
 
-![](<../../../../.gitbook/assets/image (4).png>)
+![](<../../../../.gitbook/assets/image (5).png>)
 
 There are also the following towers implemented:
 
@@ -33,11 +33,7 @@ Fp -> Fp3 -> Fp6 -> Fp12;
 
 Fp -> Fp2 -> Fp4 -> Fp12;
 
-@dot digraph fp12\_3over2over2\_arch { bgcolor="#151515" rankdir="TB" node \[shape="box"]
-
-a \[label="Fp12" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; b \[label="Fp4" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; c \[label="Fp2" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"]; d \[label="Fp" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"];
-
-a -> b; b -> c; c -> d; } @enddot
+![](<../../../../.gitbook/assets/image (1).png>)
 
 ### Field Parameters  <a href="#field_parameters" id="field_parameters"></a>
 
