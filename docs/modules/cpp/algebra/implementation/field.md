@@ -29,11 +29,11 @@ There are also the following towers implemented:
 
 Fp -> Fp3 -> Fp6 -> Fp12;
 
-![](../../../../.gitbook/assets/image.png)
+![](<../../../../.gitbook/assets/image (1).png>)
 
 Fp -> Fp2 -> Fp4 -> Fp12;
 
-![](<../../../../.gitbook/assets/image (1).png>)
+![](<../../../../.gitbook/assets/image (1) (2).png>)
 
 ### Field Parameters  <a href="#field_parameters" id="field_parameters"></a>
 
