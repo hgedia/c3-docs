@@ -9,11 +9,7 @@ Fields are a wrapper over `multiprecision` module and concept of `modular_adapto
 3. Field Parameters
 4. Field Element Algorithms, which are actually wrappers over the `multiprecision` operations.
 
-@dot digraph fields\_arch { bgcolor="#151515" rankdir="TB" node \[shape="box"]
-
-a \[label="Field Policies" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref field\_policies"]; b \[label="Field Extensions" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref field\_extensions"]; c \[label="Field Parameters" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref field\_parameters"]; d \[label="Field Element Algorithms" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref field\_element\_algorithms"];
-
-a -> b; b -> c; c -> d; } @enddot
+![](<../../../../.gitbook/assets/image (1).png>)
 
 ### Field Policies  <a href="#field_policies" id="field_policies"></a>
 
