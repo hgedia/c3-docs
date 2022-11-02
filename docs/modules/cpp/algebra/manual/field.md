@@ -104,3 +104,8 @@ struct fp2 {
 };
 ```
 
+In the above BLS base field example we can see an `element_fp` type used which adheres to traits of `fp`
+
+```cpp
+typedef typename detail::element_fp<params<bls12_base_field<381>>> value_type;
+```
