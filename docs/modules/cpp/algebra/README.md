@@ -7,7 +7,7 @@ description: Crypto3.Algebra module
 Crypto3.Algebra library provides a set algebraic constructions being used mostly for public-key schemes. The following are the building blocks for the module. Please see below for how to use the API's.
 
 * [Curves](manual/curves.md) - Elliptic curve base classes
-* [Fields](implementation/field.md) -  Field elements and extension fields for elliptic curves with overloaded field arithmetic operations.
+* [Fields](implementation/field.md) -  Finite field elements and extension fields for elliptic curves with and field arithmetic.
 * [Pairings](manual/pairings.md) - Bi-linear parings for efficient computation
 * [Matrix](manual/matrix.md) - Compile time matrix operations on vectors/scalars
 * [Multi-Exponentiation](manual/multi-exponentiation.md) - Multi-exponentiation algorithms for field elements
