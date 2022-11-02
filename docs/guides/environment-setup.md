@@ -21,3 +21,7 @@ Please execute the below to fetch the packages required or adapt the command to 
 ```shell
 sudo apt install build-essential libssl-dev libboost-all-dev cmake clang git
 ```
+
+
+
+Once the base packages are installed, please see the [quickstart](quickstart.md) guide to setup a scaffold project or [installation](environment-setup.md#installation) on how you can integrate crypto3 with your existing project.
