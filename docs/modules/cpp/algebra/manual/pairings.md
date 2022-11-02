@@ -1,6 +1,6 @@
 # Pairings
 
-Bi-linear pairing groups&#x20;
+Bi-linear pairing groups are predefined for a set of curves.
 
 ### Usage
 

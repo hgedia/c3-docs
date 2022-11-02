@@ -24,7 +24,7 @@ struct secp_k1_base_field<256> : public field<256>
 struct secp_k1_scalar_field<256> : public field<256>
 ```
 
-## Example
+### Example
 
 Below we see a specialisation of a field type to a bls12\_base\_field.
 
@@ -60,4 +60,17 @@ struct bls12_base_field<381> : public field<381> {
 	constexpr static const std::size_t arity = 1;
 };
 ```
+
+
+
+## Field Extensions
+
+Following field extensions are already built in and are used in the suite.
+
+* FP2
+* FP3
+* FP4
+* FP6\_2OVER3
+* FP6\_3OVER2
+* FP12\_2OVER3OVER2
 
