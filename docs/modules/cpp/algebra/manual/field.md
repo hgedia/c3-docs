@@ -2,7 +2,13 @@
 
 `field` type is a generic type which is an extension of `boost::multiprecision` . It is usually specialised for a particular curve and operators are overloaded to perform arithmetic over their domain. They are optimised for arithmetic in the finite field.
 
+All fields implemented in algebra library conform to the concept of a field type. A field must conform to the field traits defined in `algebra/include/nil/crypto3/algebra/type_traits.hpp`
+
+Field is generally specialised per curve and it holds the domain and other curve specific constants.
+
 ## Usage
+
+Fields are defined under the namespace `nil::crypto3::algebra::fields` and header need to be included ex: `nil/crypto3/algebra/fields/<curve>/scalar_field.hpp`
 
 A field can be instantiated as
 

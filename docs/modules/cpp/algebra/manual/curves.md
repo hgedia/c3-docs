@@ -25,19 +25,11 @@ The following elliptic curves are implemented&#x20;
 * vesta
 * X9.62
 
-
-
-All curves implemented in algebra library conform to the concept of a curve type. They can be swapped in any policies or schemes which they are taken as input in the crypto3 suite. A curve must conform to the traits defined in `algebra/include/nil/crypto3/algebra/type_traits.hpp`
-
-Curves variants defined are defined as `typedef` so it is suggested to check this before writing out an extension.
-
 ## Usage
 
-Curves are defined under the namespace `nil::crypto3::algebra::curves` and header need to be included ex: `nil/crypto3/algebra/curves/<curve_name.hpp>`
+Curves are defined under the namespace `nil::crypto3::algebra::curves`&#x20;
 
-
-
-A curve type is `policy` passed as a parameter to a cryptographic scheme. The template type can be instantiated as follows by including the relevant header:
+A curve type is generally passed as a parameter to a cryptographic scheme (TODO : Link).  The template type can be instantiated as follows by including the relevant header:
 
 ```cpp
 #include <nil/crypto3/algebra/curves/bls12.hpp>
@@ -48,7 +40,7 @@ using curve_bls_377 = curves::bls12<377> // Explicityly passing variant
 
 Curves encompass one or more `field` types definitions (via `typedef` )which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
 
-## Example
+## Example (To remove)
 
 The class below describes a BLS curve which accepts a template parameter for variants. &#x20;
 
@@ -79,4 +71,9 @@ typedef bls12<381> bls12_381;
 typedef bls12<377> bls12_377;
 
 ```
+
+We define a number of types which will associate the class with the domain & field. The important types are :&#x20;
+
+* `base_field_type :`  TODO
+* `scalar_field_type :` TODO
 
