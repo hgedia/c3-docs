@@ -4,6 +4,7 @@
 
 ## Guides
 
+* [Environment Setup](guides/environment-setup.md)
 * [Quickstart (Scaffold)](guides/quickstart.md)
 * [Installation](guides/installation.md)
 * [IDE Configuration](guides/ide-configuration/README.md)

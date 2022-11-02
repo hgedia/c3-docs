@@ -4,23 +4,13 @@ description: Scaffold project using crypto3 library
 
 # Quickstart (Scaffold)
 
-In this guide we will set up a development environment for crypto3 projects and be able to run an example.This will enable you to test ideas quickly and further explore the API’s of the suite. This guide will use a generic setup.
+In this guide we will set up a project scaffold using crypto3 and  run an example.This will enable you to test ideas quickly and further explore the API’s of the suite. This guide will use a generic setup.
 
-## Installation
+## Pre-requisites
 
-### Linux
+Please ensure you have setup your environment by following the guide [here](environment-setup.md).
 
-The following dependencies need to be installed.
-
-* [boost](https://www.boost.org/) >= 1.74.0
-* [cmake](https://cmake.org/) >= 3.5
-* [clang](https://clang.llvm.org/) >= 14.0.6
-
-Please execute the below to fetch the packages required or adapt the command to your package manager.
-
-```shell
-sudo apt install build-essential libssl-dev libboost-all-dev cmake clang git
-```
+## Scaffold Setup
 
 #### Get crypto3 scaffold
 
