@@ -18,7 +18,7 @@ struct secp_k1_base_field<256> : public field<256>
 struct secp_k1_scalar_field<256> : public field<256>
 ```
 
-## Example (TO REMOVE)
+## Example
 
 Below we see a specialisation of a field type to a bls12\_base\_field.
 

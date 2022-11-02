@@ -107,3 +107,10 @@
 ## ZK
 
 * [Proof Pipeline](zkllvm/proof-pipeline.md)
+
+## Misc
+
+* [Glossary](misc/glossary.md)
+* [Contributing](misc/contributing.md)
+* [Code of conduct](misc/code-of-conduct.md)
+* [Contact](misc/contact.md)
