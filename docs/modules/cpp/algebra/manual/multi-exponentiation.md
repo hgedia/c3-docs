@@ -1,13 +1,17 @@
 # Multi-Exponentiation
 
-## Multi-exponentiation algorithm
+Multi-exponentiation can be performed in two forms
 
-TODO
+* standard
+* mixed addition
 
-### Usage
+Each of the above forms take a policy which can be one of the following :&#x20;
 
-TODO
+* Naive : simple multiplication & summation of result
+* Bos-Coster &#x20;
+* [Pippenger (Special case)](https://eprint.iacr.org/2012/549.pdf)
 
-## Examples
+Each of the above functions takes ranges to vectors/scalars as inputs.
 
-More examples of usage of the library can be found in the folder `example/`
+
+
