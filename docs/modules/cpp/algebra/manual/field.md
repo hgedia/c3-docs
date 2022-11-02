@@ -74,3 +74,33 @@ Following field extensions are already built in and are used in the suite.
 * FP6\_3OVER2
 * FP12\_2OVER3OVER2
 
+Each of the above define a type trait which is then exhibited by specialisations.
+
+### Example
+
+```cpp
+template<typename BaseField>
+struct fp2 {
+	typedef BaseField base_field_type;
+	typedef base_field_type policy_type;
+	typedef detail::fp2_extension_params<policy_type> extension_policy;
+	typedef typename extension_policy::underlying_field_type underlying_field_type;
+
+	constexpr static const std::size_t modulus_bits = policy_type::modulus_bits;
+	typedef typename policy_type::integral_type integral_type;
+
+	typedef typename policy_type::extended_integral_type extended_integral_type;
+
+	constexpr static const std::size_t number_bits = policy_type::number_bits;
+	typedef typename policy_type::modular_type modular_type;
+	typedef typename policy_type::modular_backend modular_backend;
+
+	constexpr static const integral_type modulus = policy_type::modulus;
+
+	typedef typename detail::element_fp2<extension_policy> value_type;
+
+	constexpr static const std::size_t arity = 2;
+	constexpr static const std::size_t value_bits = arity * modulus_bits;
+};
+```
+
