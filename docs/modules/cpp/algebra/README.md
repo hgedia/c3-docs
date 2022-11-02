@@ -4,7 +4,9 @@ description: Crypto3.Algebra module
 
 # algebra
 
-Crypto3.Algebra library provides a set algebraic constructions being used mostly for public-key schemes. The following are the building blocks for the module. Please see below for how to use the API's.
+Crypto3.Algebra is to provide useful interfaces for basic cryptography math. It's based on NilFoundation fork of Boost.Multiprecision so that it can be used with boost cpp\_int, gmp or other backends.
+
+The library can be further sub-divided into the following parts :&#x20;
 
 * [Curves](manual/curves.md) - Elliptic curve base classes
 * [Fields](implementation/field.md) -  Finite field elements and extension fields for elliptic curves with and field arithmetic.
