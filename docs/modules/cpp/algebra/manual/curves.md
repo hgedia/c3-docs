@@ -48,7 +48,7 @@ using curve_bls_377 = curves::bls12<377> // Explicityly passing variant
 
 Curves encompass one or more `field` types definitions (via `typedef` )which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
 
-## Example
+## Example #1&#x20;
 
 The class below describes a BLS curve which accepts a template parameter for variants. &#x20;
 
@@ -80,3 +80,9 @@ typedef bls12<377> bls12_377;
 
 ```
 
+## Example#2
+
+```cpp
+using curve_type = curves::bls12_381;
+using scheme_type = bls<bls_default_public_params<>, bls_mss_ro_version, bls_basic_scheme, curve_type>;
+```

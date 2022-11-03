@@ -2,13 +2,21 @@
 description: Navigate docs
 ---
 
-# Navigation
+# Navigating Docs
 
 Crypto3 suite is written in C++. Bindings for other languages will be supported in the future.
 
 We will see how they are structured:
 
-## C++
+
+
+## Guides
+
+
+
+## Modules
+
+### C++
 
 Under the language , user can find the modules which are implemented by the library. Under each , the user can expect to find the following pages.
 
@@ -18,3 +26,15 @@ Under the language , user can find the modules which are implemented by the libr
 * **References :** doxygen generated documentation.
 
 This guide is not designed to use in isolation and should be used in conjunction with the doxygen generated documentation. The aim of this guide is to introduce the user to major concepts and examples of the usage of the library.
+
+
+
+## Examples
+
+This section will present some working examples of code combining different modules of the crypto3 suite.
+
+
+
+## Misc
+
+This section covers other miscellaneous guidelines/information regarding contributing to the suite, code of conduct , feedback and contact details for collaboration.

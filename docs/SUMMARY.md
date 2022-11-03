@@ -4,6 +4,7 @@
 
 ## Guides
 
+* [Navigating Docs](guides/navigating-docs.md)
 * [Environment Setup](guides/environment-setup.md)
 * [Quickstart (Scaffold)](guides/quickstart.md)
 * [Installation](guides/installation.md)
@@ -96,7 +97,6 @@
     * [concepts](modules/cpp/zk/concepts.md)
     * [implementation](modules/cpp/zk/implementation.md)
     * [manual](modules/cpp/zk/manual.md)
-  * [Navigation](modules/cpp/navigation.md)
 
 ## Examples
 
