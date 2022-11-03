@@ -10,9 +10,11 @@ Under guides users can find step by step walk-through of setting up environment,
 
 ## Modules
 
-Crypto3 suite is written in C++. Bindings for other languages will be supported in the future.
+{% hint style="info" %}
+Crypto3 is written in C++. Bindings for other languages will be supported in the future.
+{% endhint %}
 
-We will see how they are structured:
+Module descriptions/manuals are compartmentalised by programming language
 
 ### C++
 
