@@ -1,20 +1,18 @@
 ---
-description: Navigate docs
+description: Navigating crypto3 documentation portal
 ---
 
-# Navigating Docs
+# Portal Overview
+
+## Guides
+
+Under guides users can find step by step walk-through of setting up environment, scaffold projects or integrate Crypto3 library in the projects.
+
+## Modules
 
 Crypto3 suite is written in C++. Bindings for other languages will be supported in the future.
 
 We will see how they are structured:
-
-
-
-## Guides
-
-
-
-## Modules
 
 ### C++
 
@@ -27,13 +25,9 @@ Under the language , user can find the modules which are implemented by the libr
 
 This guide is not designed to use in isolation and should be used in conjunction with the doxygen generated documentation. The aim of this guide is to introduce the user to major concepts and examples of the usage of the library.
 
-
-
 ## Examples
 
 This section will present some working examples of code combining different modules of the crypto3 suite.
-
-
 
 ## Misc
 

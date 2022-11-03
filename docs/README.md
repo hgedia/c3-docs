@@ -35,4 +35,4 @@ The repository for crypto3 library is located [here](https://github.com/NilFound
 
 In order to start using the suite, please take a look at [Quickstart](guides/quickstart.md) guide or [Installation](guides/installation.md) guide.&#x20;
 
-See [navigating docs](guides/navigating-docs.md) for an overview of this documentation portal.
+See [portal overview](guides/portal-overview.md) for an layout of the docs.

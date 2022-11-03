@@ -4,7 +4,7 @@
 
 ## Guides
 
-* [Navigating Docs](guides/navigating-docs.md)
+* [Portal Overview](guides/portal-overview.md)
 * [Environment Setup](guides/environment-setup.md)
 * [Quickstart (Scaffold)](guides/quickstart.md)
 * [Installation](guides/installation.md)
