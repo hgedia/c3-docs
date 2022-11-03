@@ -22,7 +22,7 @@
       * [curves](modules/cpp/algebra/manual/curves.md)
       * [field](modules/cpp/algebra/manual/field.md)
       * [pairings](modules/cpp/algebra/manual/pairings.md)
-      * [matrix/vectors/scalars](modules/cpp/algebra/manual/matrix.md)
+      * [matrix/vectors](modules/cpp/algebra/manual/matrix.md)
       * [multi-exponentiation](modules/cpp/algebra/manual/multi-exponentiation.md)
     * [Implementation](modules/cpp/algebra/implementation/README.md)
       * [curves](modules/cpp/algebra/implementation/curves.md)

@@ -1,3 +1,7 @@
+---
+description: Multi exponentiation helpers
+---
+
 # multi-exponentiation
 
 Multi-exponentiation can be performed in two forms

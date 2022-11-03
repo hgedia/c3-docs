@@ -33,6 +33,6 @@ crypto3 is used extensively in all applications which =nil;Foundation is develop
 
 The repository for crypto3 library is located [here](https://github.com/NilFoundation/crypto3). The suite is highly modular and all components have their own repository ex : [algebra](https://github.com/NilFoundation/crypto3-algebra/), [block](https://github.com/NilFoundation/crypto3-block), [pubkey](https://github.com/NilFoundation/crypto3-pubkey). The core repository is an umbrella repository which adds all the modules under it as sub-modules.
 
-See [portal overview](guides/portal-overview.md) for an layout of the docs.
-
 In order to start using the suite, please take a look at [Quickstart](guides/quickstart.md) guide or [Installation](guides/installation.md) guide.&#x20;
+
+See [portal overview](guides/portal-overview.md) for an layout of the docs.
