@@ -1,4 +1,4 @@
-# field
+# Field
 
 `field` type is a generic type which is an extension of `boost::multiprecision` . It is usually specialised for a particular curve and operators are overloaded to perform arithmetic over their domain. They are optimised for arithmetic in the finite field.
 
@@ -24,7 +24,7 @@ struct secp_k1_base_field<256> : public field<256>
 struct secp_k1_scalar_field<256> : public field<256>
 ```
 
-### Example#1
+### Example
 
 Below we see a specialisation of a field type to a bls12\_base\_field.
 
@@ -60,6 +60,8 @@ struct bls12_base_field<381> : public field<381> {
 	constexpr static const std::size_t arity = 1;
 };
 ```
+
+
 
 ## Field Extensions
 

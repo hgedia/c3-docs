@@ -96,6 +96,7 @@
     * [concepts](modules/cpp/zk/concepts.md)
     * [implementation](modules/cpp/zk/implementation.md)
     * [manual](modules/cpp/zk/manual.md)
+  * [Navigation](modules/cpp/navigation.md)
 
 ## Examples
 
