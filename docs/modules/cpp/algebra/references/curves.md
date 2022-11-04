@@ -1,6 +1,6 @@
 # curves
 
-## curves <a href="#block_cipher_concept" id="block_cipher_concept"></a>
+## curves
 
 A `curve` is a policy intended to represent an elliptic curve of the form $$y^{2}=x^{3}+ax+b$$
 
@@ -26,11 +26,11 @@ The following type members must be valid and have their specified effects
 
 
 
-## curves group <a href="#block_cipher_concept" id="block_cipher_concept"></a>
+## curves group
 
 TODO : Describe a curve group
 
-#### Requirements <a href="#block_cipher_concept" id="block_cipher_concept"></a>
+#### Requirements
 
 The type `X` satisfies `curve_group` if
 
@@ -52,7 +52,7 @@ The following static data member definitions must be valid and have their specif
 | `X::block_words` | `std::size_t` | `Integral` amount of `WordType` values in `BlockType` |
 | `X::rounds`      | `std::size_t` | `Integral` amount of rounds the algorithm does.       |
 
-The following expressions must be valid and have their specified effects
+The following expressions must be valid and have their specified effects aaaaaaa
 
 | Expression              | Requirements                                                                                                                                                                                                                 | Return Type   |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
