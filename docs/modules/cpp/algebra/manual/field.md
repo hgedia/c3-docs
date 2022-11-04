@@ -74,7 +74,7 @@ Following field extensions are already built in and are used in the suite.
 
 Each of the above define a type trait which is then exhibited by specialisations.
 
-### Example
+### Example#1
 
 ```cpp
 template<typename BaseField>

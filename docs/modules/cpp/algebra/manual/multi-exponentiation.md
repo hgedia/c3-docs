@@ -1,3 +1,7 @@
+---
+description: Multi exponentiation helpers
+---
+
 # multi-exponentiation
 
 Multi-exponentiation can be performed in two forms
@@ -13,11 +17,11 @@ Each of the above forms take a policy which can be one of the following :&#x20;
 
 Each of the above functions takes ranges to vectors/scalars as inputs.
 
-
+## Usage
 
 multi-exponentiation algorithms are defined under the namespace `nil::crypto3::algebra` and header need to be included ex: `algebra/multiexp/multiexp.hpp`
 
-## Example
+### Example#1
 
 ```cpp
 template<typename MultiexpMethod, typename InputBaseIterator, typename InputFieldIterator>

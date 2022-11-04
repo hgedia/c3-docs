@@ -25,8 +25,6 @@ The following elliptic curves are implemented&#x20;
 * vesta
 * X9.62
 
-
-
 All curves implemented in algebra library conform to the concept of a curve type. They can be swapped in any policies or schemes which they are taken as input in the crypto3 suite. A curve must conform to the traits defined in `algebra/include/nil/crypto3/algebra/type_traits.hpp`
 
 Curves variants defined are defined as `typedef` so it is suggested to check this before writing out an extension.
@@ -48,7 +46,7 @@ using curve_bls_377 = curves::bls12<377> // Explicityly passing variant
 
 Curves encompass one or more `field` types definitions (via `typedef` )which respect the curve specific constants and domain. Curves are generally used along with the [pubkey](https://github.com/NilFoundation/crypto3-pubkey) library which enables a user to create public/private keys and perform cryptographic operations.
 
-## Example #1&#x20;
+### Example #1&#x20;
 
 The class below describes a BLS curve which accepts a template parameter for variants. &#x20;
 
@@ -80,7 +78,7 @@ typedef bls12<377> bls12_377;
 
 ```
 
-## Example#2
+### Example#2
 
 ```cpp
 using curve_type = curves::bls12_381;
