@@ -29,6 +29,7 @@
       * [field](modules/cpp/algebra/implementation/field.md)
     * [references](modules/cpp/algebra/references/README.md)
     * [concept](modules/cpp/algebra/concept.md)
+      * [field](modules/cpp/algebra/concept/field.md)
       * [curves](modules/cpp/algebra/references/curves.md)
   * [Block](modules/cpp/block/README.md)
     * [concepts](modules/cpp/block/concepts.md)
