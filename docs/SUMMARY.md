@@ -36,6 +36,7 @@
     * [implementation](modules/cpp/block/implementation.md)     
     * [concepts](modules/cpp/block/concepts.md)
     * [extension](modules/cpp/block/extension.md)
+    * [implementation](modules/cpp/block/implementation.md)
     * [usage](modules/cpp/block/usage.md)
   * [Blueprint](modules/cpp/blueprint/README.md)
     * [concepts](modules/cpp/blueprint/concepts.md)
