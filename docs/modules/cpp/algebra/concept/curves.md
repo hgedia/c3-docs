@@ -14,12 +14,12 @@ Given
 * `ScalarFieldType`, the type named by `X::scalar_field_type`
 * `GType`, the type named by `X::g1_type`
 
-``
+
 
 The following type members must be valid and have their specified effects
 
-| Expression             | Type        | Requirements and Notes                     |
-| ---------------------- | ----------- | ------------------------------------------ |
+| Expression             | Type        | Requirements                               |
+| ---------------------- | ----------- |--------------------------------------------|
 | `X::base_field_type`   | `FieldType` | `FieldType` type satisfies `field` concept |
 | `X::scalar_field_type` | `FieldType` | `FieldType` type satisfies `field` concept |
 | `X::`g1\_type          | `FieldType` | `FieldType` type satisfies `field` concept |
