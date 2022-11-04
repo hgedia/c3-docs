@@ -30,7 +30,7 @@
     * [references](modules/cpp/algebra/references/README.md)
     * [concept](modules/cpp/algebra/concept.md)
       * [field](modules/cpp/algebra/concept/field.md)
-      * [curves](modules/cpp/algebra/references/curves.md)
+      * [curves](modules/cpp/algebra/concept/curves.md)
   * [Block](modules/cpp/block/README.md)
     * [concepts](modules/cpp/block/concepts.md)
     * [extension](modules/cpp/block/extension.md)

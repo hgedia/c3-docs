@@ -1,6 +1,6 @@
 # curves
 
-## curves
+## curve
 
 A `curve` is a policy intended to represent an elliptic curve of the form $$y^{2}=x^{3}+ax+b$$
 
