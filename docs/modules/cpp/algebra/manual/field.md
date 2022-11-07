@@ -1,3 +1,7 @@
+---
+description: Crypto3.Field manual
+---
+
 # field
 
 ## Field
@@ -10,7 +14,7 @@ Field is generally specialised per curve and it holds the domain and other curve
 
 ### Usage
 
-Fields are defined under the namespace `nil::crypto3::algebra::fields` and header need to be included ex: `nil/crypto3/algebra/fields/<curve>/scalar_field.hpp`
+Fields are defined under the namespace `nil::crypto3::algebra::fields` and header need to be included ex: `nil/crypto3/algebra/fields/field.hpp`
 
 A field can be instantiated as:
 
@@ -47,7 +51,6 @@ int main() {
     //Subtraction
     auto sub = f1 - f2;
 
-
     //Multiplication
     auto mul  = f1 * f2;
 
@@ -61,9 +64,6 @@ int main() {
 
     //Inverse
     auto inv = f1.inversed();
-
-    //Squared
-    auto sq = f1.is_square();
 
     //negative
     auto f1neg = -f1;
