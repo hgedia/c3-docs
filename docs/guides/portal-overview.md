@@ -21,9 +21,13 @@ Module descriptions/manuals are compartmentalised by programming language
 Under the language , user can find the modules which are implemented by the library. Under each , the user can expect to find the following pages.
 
 * **Manual** : Describes the major components/APIs in the library and examples of usage.
-* **Implementation**: Describes the architecture of the underlying implementation.
 * **Concepts :** Describes in abstract terms the traits and policies which types are using.
 * **References :** doxygen generated documentation.
+
+Optional guides:&#x20;
+
+* **Implementation**: Describes the architecture of the underlying implementation.
+* **Extension** : Describes how to extend the library
 
 This guide is not designed to use in isolation and should be used in conjunction with the doxygen generated documentation. The aim of this guide is to introduce the user to major concepts and examples of the usage of the library.
 
