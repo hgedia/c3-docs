@@ -8,7 +8,7 @@ All fields implemented in algebra library conform to the concept of a field type
 
 Field is generally specialised per curve and it holds the domain and other curve specific constants.
 
-## Usage
+### Usage
 
 Fields are defined under the namespace `nil::crypto3::algebra::fields` and header need to be included ex: `nil/crypto3/algebra/fields/<curve>/scalar_field.hpp`
 
@@ -26,7 +26,7 @@ struct secp_k1_base_field<256> : public field<256>
 struct secp_k1_scalar_field<256> : public field<256>
 ```
 
-### Example#1
+#### Example#1
 
 Below we see a specialisation of a field type to a bls12\_base\_field.
 
@@ -76,7 +76,9 @@ Following field extensions are already built in and are used in the suite.
 
 Each of the above define a type trait which is then exhibited by specialisations.
 
-### Example#1
+### Usage
+
+#### Example#1
 
 ```cpp
 template<typename BaseField>
@@ -109,3 +111,4 @@ In the above BLS base field example we can see an `element_fp` type used which a
 ```cpp
 typedef typename detail::element_fp<params<bls12_base_field<381>>> value_type;
 ```
+
