@@ -28,117 +28,55 @@ struct secp_k1_scalar_field<256> : public field<256>
 
 #### Example#1
 
-Below we see a specialisation of a field type to a `bls12_base_field`.
+In this example , we see finite field element arithmetic performed on filed elements over`BLS12-381` curve.&#x20;
 
 ```cpp
-template<std::size_t Version>
-struct bls12_base_field;
-
-template<>
-struct bls12_base_field<381> : public field<381> {
-	typedef field<381> policy_type;
-
-	constexpr static const std::size_t modulus_bits = policy_type::modulus_bits;
-	typedef typename policy_type::integral_type integral_type;
-
-	typedef typename policy_type::extended_integral_type extended_integral_type;
-
-	constexpr static const std::size_t number_bits = policy_type::number_bits;
-
-	constexpr static const integral_type modulus =
-		0x1A0111EA397FE69A4B1BA7B6434BACD764774B84F38512BF6730D2A0F6B0F6241EABFFFEB153FFFFB9FEFFFFFFFFAAAB_cppui381;
-
-	typedef typename policy_type::modular_backend modular_backend;
-	constexpr static const modular_params_type modulus_params = modulus;
-	typedef nil::crypto3::multiprecision::number<
-		nil::crypto3::multiprecision::backends::modular_adaptor<
-			modular_backend,
-			nil::crypto3::multiprecision::backends::modular_params_ct<modular_backend, modulus_params>>>
-		modular_type;
-
-	typedef typename detail::element_fp<params<bls12_base_field<381>>> value_type;
-
-	constexpr static const std::size_t value_bits = modulus_bits;
-	constexpr static const std::size_t arity = 1;
-};
-```
-
-#### Example#2&#x20;
-
-In this example , we see finite field element arithmetic performed on filed elements over`BLS12-381` curve. We see elements are defined conform to `boost::multiprecision` literals defined [here](https://www.boost.org/doc/libs/1\_73\_0/libs/multiprecision/doc/html/boost\_multiprecision/tut/lits.html).
-
-```cpp
-#include <nil/crypto3/detail/literals.hpp>
+#include <iostream>
 #include <nil/crypto3/algebra/fields/bls12/base_field.hpp>
 
-using namespace nil::crypto3::algebra;
+using namespace nil::crypto3::algebra::fields;
 using namespace nil::crypto3::multiprecision;
 
-enum field_operation_test_elements : std::size_t {
-    e1,
-    e2,
-    e1_plus_e2,
-    e1_minus_e2,
-    e1_mul_e2,
-    e1_dbl,
-    e2_inv,
-    e1_pow_C1,
-    e2_pow_2,
-    e2_pow_2_sqrt,
-    minus_e1,
-    elements_set_size
-};
-
-enum field_operation_test_constants : std::size_t { C1, constants_set_size };
-typedef std::size_t constant_type;
-
 int main() {
-
-    using policy_type = fields::bls12_fq<381>;
-    using value_type = typename policy_type::value_type;
-    using test_set_t = std::array<value_type, elements_set_size>;
-    using const_set_t = std::array<constant_type, constants_set_size>;
-
-    constexpr test_set_t elements1 = {
-            0x3d9cb62ebac9d6c7b94245d2d6144d500f218bb90a16a1e4f70d98fd44b4b9ee274de15a0a3d231dac1eaa449d31404_cppui381,
-            0x15c88779fc8a30cca95ec4bbf71aa4c302bccf7dc571e6e45fbf1ed24989ec23dff741ca00597f4ab1fc628304e8761b_cppui381,
-            0x19a252dce836ce3924f2e919247be99803aee83956135102af2ff8621dd537c2c26c1fdfa0fd517c8cbe4d274ebb8a1f_cppui381,
-            0x81255d328a2533a1d51075779924ce962ac94c2beb495f956e28d5e8172559f21299c4a519e52e6e2c4882144ea4894_cppui381,
-            0x4e02d210a60d52212c21056e050b7f7b6aa45c2fb85e692b1fef9e3e6fb43b2bf8103105f43daca458e4dccc9f5236c_cppui381,
-            0x7b396c5d7593ad8f72848ba5ac289aa01e431772142d43c9ee1b31fa896973dc4e9bc2b4147a463b583d54893a62808_cppui381,
-            0x68241cb698160ee94897ec6600bc997de3fed563dfc36a758334c71dc76a2473571cfbc0f674038ee748add41e4277a_cppui381,
-            0xbb4588b98237fefeba65f928e69da9106c690e02c70361947b39d0f5a6d462096431d375d4b66ae7e4daef9f2400a09_cppui381,
-            0x2e7ebd9b39f65a9485b32b52269baa84b2d33a80c8747c994b1e58c0caa09b4acf7685583898549db1029a1de657d8a_cppui381,
-            0x4388a703cf5b5cda1bce2fa4c31081461ba7c072e132bdb0771b3cead270a003eb4be34b0fa80b508029d7cfb173490_cppui381,
-            0x162746874dd3492dcf87835915ea6802638532c962e3a8a117bff9112265aa853c3721e910b02dcddf3d155bb62c96a7_cppui381};
-    constexpr const_set_t constants1 = {865433380};
+    auto f1 = bls12_fq<381>::value_type(0x1);
+    auto f2 = bls12_fq<381>::value_type(0x2);
 
     //Addition
-    static_assert(elements1[e1] + elements1[e2] == elements1[e1_plus_e2], "add error");
+    auto add  = f1 + f2;
 
-    //Field Subtraction
-    static_assert(elements1[e1] - elements1[e2] == elements1[e1_minus_e2], "sub error");
+    //Subtraction
+    auto sub = f1 - f2;
+
 
     //Multiplication
-    static_assert(elements1[e1] * elements1[e2] == elements1[e1_mul_e2], "mul error");
+    auto mul  = f1 * f2;
 
-    // Double
-    static_assert(elements1[e1].doubled() == elements1[e1_dbl], "dbl error");
+    //Equality
+    if (f1 == f2){
+        std::cout<<"Equal field elements\n";
+    } else
+    {
+        std::cout<<"Inequality of field elements\n";
+    }
 
     //Inverse
-    static_assert(elements1[e2].inversed() == elements1[e2_inv], "inv error");
+    auto inv = f1.inversed();
 
-    //exponentiation
-    static_assert(elements1[e1].pow(constants1[C1]) == elements1[e1_pow_C1], "pow error");
+    //Squared
+    auto sq = f1.is_square();
 
-    //Square
-    static_assert(elements1[e2].squared() == elements1[e2_pow_2], "sqr error");
+    //negative
+    auto f1neg = -f1;
 
-    //Square-root
-    static_assert((elements1[e2].squared()).sqrt() == elements1[e2_pow_2_sqrt], "sqrt error");
+    // Power
+    auto f1pow3 = f1.pow(3);
 
-    //Negative
-    static_assert(-elements1[e1] == elements1[minus_e1], "neg error");
+    //Square (& square root)
+    auto f1sq = f1.squared().sqrt();
+
+    if (f1 == f1sq){
+        std::cout <<"Matching field elements\n";
+    }
 
     return 0;
 }
