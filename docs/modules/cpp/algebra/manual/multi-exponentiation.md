@@ -23,11 +23,13 @@ multi-exponentiation algorithms are defined under the namespace `nil::crypto3::a
 
 ### Algorithm
 
+TODO - Chunks!?
+
 ```cpp
 template<typename MultiexpMethod, typename InputBaseIterator, typename InputFieldIterator>
 typename std::iterator_traits<InputBaseIterator>::value_type
 	multiexp(InputBaseIterator vec_start, InputBaseIterator vec_end, InputFieldIterator scalar_start,
-			 InputFieldIterator scalar_end, const std::size_t chunks_count)++
+			 InputFieldIterator scalar_end, const std::size_t chunks_count)
 ```
 
 Policy
