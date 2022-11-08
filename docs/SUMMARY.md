@@ -20,7 +20,7 @@
   * [Algebra](modules/cpp/algebra/README.md)
     * [manual](modules/cpp/algebra/manual/README.md)
       * [curves](modules/cpp/algebra/manual/curves.md)
-      * [field](modules/cpp/algebra/manual/field.md)
+      * [field elements](modules/cpp/algebra/manual/field.md)
       * [matrix/vectors](modules/cpp/algebra/manual/matrix.md)
       * [multi-exponentiation](modules/cpp/algebra/manual/multi-exponentiation.md)
       * [pairings](modules/cpp/algebra/manual/pairings.md)

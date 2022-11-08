@@ -2,7 +2,7 @@
 description: Crypto3.Field manual
 ---
 
-# field
+# field elements
 
 ## Field
 
@@ -10,7 +10,11 @@ description: Crypto3.Field manual
 
 All fields implemented in algebra library conform to the concept of a field type. A field must conform to the field traits defined in `algebra/include/nil/crypto3/algebra/type_traits.hpp`
 
-Field is generally specialised per curve and it holds the domain and other curve specific constants. Field consists of a set of stateless policies and with the extension of `modular_adaptor` allows for finite field arithmetic. If you wish to use elliptic curve related arithmetic , see __ `element_fp`&#x20;
+Field consists of a set of stateless policies and with the extension of `modular_adaptor` allows for finite field arithmetic. Field is generally extended per curve and it holds the domain and other curve specific constants.&#x20;
+
+If you wish to use elliptic curve related arithmetic , use __ `element_fp.`
+
+If you wish to perform multiprecision airthmetic unrelated to curves see `crypto3::multiprecision`
 
 ### Usage
 
