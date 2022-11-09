@@ -21,8 +21,6 @@ Each of the above functions takes ranges to vectors/scalars as inputs.
 
 multi-exponentiation algorithms are defined under the namespace `nil::crypto3::algebra` and header need to be included ex: `algebra/multiexp/multiexp.hpp`
 
-### Algorithm
-
 TODO - Chunks!?
 
 ```cpp
