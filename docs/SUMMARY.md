@@ -32,7 +32,8 @@
       * [field](modules/cpp/algebra/concept/field.md)
       * [curves](modules/cpp/algebra/concept/curves.md)
   * [Block](modules/cpp/block/README.md)
-    * [manual](modules/cpp/block/manual.md)
+    * [manual](modules/cpp/block/manual/README.md)
+      * [ciphers](modules/cpp/block/manual/ciphers.md)
     * [implementation](modules/cpp/block/implementation.md)
     * [concepts](modules/cpp/block/concepts.md)
     *
