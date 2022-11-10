@@ -60,9 +60,9 @@ TODO : Add description
 template<typename PairingCurveType, typename PairingPolicy = pairing::pairing_policy<PairingCurveType>>
 typename PairingCurveType::gt_type::value_type
 	double_miller_loop(const typename PairingPolicy::g1_precomputed_type &prec_P1,
-					   const typename PairingPolicy::g2_precomputed_type &prec_Q1,
-					   const typename PairingPolicy::g1_precomputed_type &prec_P2,
-					   const typename PairingPolicy::g2_precomputed_type &prec_Q2)
+	                   const typename PairingPolicy::g2_precomputed_type &prec_Q1,
+			   const typename PairingPolicy::g1_precomputed_type &prec_P2,
+			   const typename PairingPolicy::g2_precomputed_type &prec_Q2)
 
 ```
 
