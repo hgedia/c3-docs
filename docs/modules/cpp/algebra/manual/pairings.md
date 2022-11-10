@@ -12,9 +12,7 @@ Pairings for following curves is implemented
 
 Pairings are defined under the namespaces `nil::crypto3::algebra::pairing`
 
-The following algorithms are supported
-
-
+Below we define some types used as inputs in algorithms:
 
 1. `g1_type::value_type`  conforms to the traits of a `curve_element` type representing an element from group `G1`
 2. `g2_type::value_type` conforms to the traits of a `curve_element` type representing an element from group `G2`
