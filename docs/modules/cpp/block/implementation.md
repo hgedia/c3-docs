@@ -20,11 +20,7 @@ Block cipher library architecture consists of several parts listed below:
 4. Accumulators
 5. Value Processors
 
-@dot digraph block\_cipher\_arch { bgcolor="#151515" rankdir="TB" node \[shape="box"]
-
-a \[label="Algorithms" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref block\_cipher\_algorithms"]; b \[label="Stream Processors" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref block\_cipher\_stream"]; c \[label="Cipher Algorithms" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref block\_cipher\_policies"]; d \[label="Accumulators" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref block\_cipher\_accumulators"]; e \[label="Value Processors" color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica" URL="@ref block\_cipher\_value"];
-
-a -> b; b -> c; c -> d; d -> e; } @enddot
+![](../../../.gitbook/assets/image.png)
 
 ## Algorithms <a href="#block_cipher_algorithms" id="block_cipher_algorithms"></a>
 
@@ -74,33 +70,11 @@ This requires an introduction of stream processor specified with particular para
 
 Example. Lets assume input data stream consists of 16 bytes as follows.
 
-@dot digraph bytes { bgcolor="#151515" node \[shape=record color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"];
-
-struct1 \[label="0x00 | 0x01 | 0x02 | 0x03 | 0x04 | 0x05 | 0x06 | 0x07 | 0x08 | 0x09 | 0x10 | 0x11 | 0x12 | 0x13 | 0x14 | 0x15"];
-
-} @enddot
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Lets assume the selected cipher to be used is Rijndael with 32 bit word size, 128 bit block size and 128 bit key size. This means input data stream needs to be converted to 32 bit words and merged to 128 bit blocks as follows:
 
-@dot digraph bytes\_to\_words { bgcolor="#151515" node \[shape=record color="#f5f2f1" fontcolor="#f5f2f1" fontname="helvetica"];
-
-struct1 \[label=" 0x00 | 0x01 | 0x02 | 0x03 | 0x04 | 0x05 | 0x06 | 0x07 | 0x08 | 0x09 | 0x10 | 0x11 | 0x12 | 0x13 | 0x14 | 0x15"];
-
-struct2 \[label=" 0x00 0x01 0x02 0x03 | 0x04 0x05 0x06 0x07 | 0x08 0x09 0x10 0x11 | 0x12 0x13 0x14 0x15"];
-
-struct3 \[label=" 0x00 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x10 0x11 0x12 0x13 0x14 0x15"];
-
-struct1:b0 -> struct2:w0 struct1:b1 -> struct2:w0 struct1:b2 -> struct2:w0 struct1:b3 -> struct2:w0
-
-struct1:b4 -> struct2:w1 struct1:b5 -> struct2:w1 struct1:b6 -> struct2:w1 struct1:b7 -> struct2:w1
-
-struct1:b8 -> struct2:w2 struct1:b9 -> struct2:w2 struct1:b10 -> struct2:w2 struct1:b11 -> struct2:w2
-
-struct1:b12 -> struct2:w3 struct1:b13 -> struct2:w3 struct1:b14 -> struct2:w3 struct1:b15 -> struct2:w3
-
-struct2:w0 -> struct3:bl0 struct2:w1 -> struct3:bl0 struct2:w2 -> struct3:bl0 struct2:w3 -> struct3:bl0 }
-
-@enddot
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Now with this a \[`BlockCipher`]\(@ref block\_cipher\_concept) instance of \[`rijndael`]\(@ref block::rijndael) can be fed.
 

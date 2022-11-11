@@ -1,4 +1,4 @@
-# Field
+# field
 
 ## Field Architecture  <a href="#fields_architecture" id="fields_architecture"></a>
 
@@ -23,7 +23,7 @@ For example, this is the tower used for `bn128` and `bls12_381` operations and p
 
 Fp -> Fp2 -> Fp6 -> Fp12;
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (1).png>)
 
 There are also the following towers implemented:
 

@@ -1,4 +1,4 @@
-# Elliptic Curves
+# curves
 
 ## Elliptic Curves Architecture  <a href="#curves_architecture" id="curves_architecture"></a>
 
@@ -8,7 +8,7 @@ Curves were build upon the `fields`. So it basically consist of several parts li
 2. Curve g1, g2 group element arithmetic
 3. Basic curve policies
 
-![](<../../../../.gitbook/assets/image (3).png>)
+![](<../../../../.gitbook/assets/image (3) (1).png>)
 
 ### Curve Policies <a href="#curve_policies" id="curve_policies"></a>
 
