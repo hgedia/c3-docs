@@ -2,11 +2,9 @@
 
 Block ciphers usage is usually split to three stages:
 
-1. Initialization (key scheduling)
-2. Accumulation (data processing/preprocessing)
+1. Initialisation (key scheduling)
+2. Accumulation (data processing/pre-processing)
 3. Encryption
-
-This separation defines the implementation architecture.
 
 Some particular cases merge accumulation step with encryption step. This means block gets encrypted as far as it is found filled with enough data.
 
