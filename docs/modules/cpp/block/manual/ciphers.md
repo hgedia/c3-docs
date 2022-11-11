@@ -12,7 +12,5 @@ The following block ciphers are implemented by the library:
 * md4/md5
 * rijndael
 
-See the following below guides to on how to use & extend the library.
-
 
 
