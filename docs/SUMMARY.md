@@ -112,6 +112,7 @@
 ## ZK
 
 * [Proof Pipeline](zkllvm/proof-pipeline.md)
+* [zkLLVM](zk/zkllvm.md)
 
 ## Misc
 
