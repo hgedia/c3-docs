@@ -25,9 +25,9 @@ Below we look at flow of how the zkLLVM tool chain is invoked:
 2.  Users who wish to generate a proof for the circuit , will require to run the `assigner` along with the circuit generated above and pass the public inputs & witness (if necessary). This will output two files:
 
     * Constraint : Binary file representing arithmetization of the circuit.
-    * Execution Trace: Binary file representing the execution trace of the instantiation of the circuit.
+    * Assignment Table: Binary file pre-processed  public inputs & witness.
 
-    The constraint and the execution trace generated above should be passed as in input to state proof generator binary. (TODO add more details). This will output a binary proof file.
+    The constraint and the AT generated above should be passed as in input to proof generator binary. (TODO add more details). This will output a binary proof file.
 3. Users who wish to verify the proof will be required to feed the proof generated into a script which executes the assigner along with the proof and public inputs to output a json (TO CHECK). This creates data to be passed into EVM contract (or any `placeholder` verifier implementation(TODO- Check)
 
 ## Build

@@ -1,14 +1,12 @@
----
-description: Paceholder proof pipeline
----
-
-# Proof Pipeline
+# Proof Market Pipeline
 
 ## Introduction
 
-crypto3 library provides  all primitives for developers to write zero knowledge circuits  and provides API's to generate , verify proof. The circuits can be written for any zk scheme ex: SNARKS : plonk , .... or STARKS : ..... (TODO).
+crypto3 library provides  all primitives for developers to write zero knowledge circuits  and provides API's to generate , verify proof. The circuits can be written for any zk scheme ex: SNARKS : plonk , .... or STARKS.
 
-This guide does not explain the details of how to write circuts. It assumes the circuits are already written and available to the user via =nil; proof market.  This guide explains the pipelines for how proof generators and verifyers can use the circits and the artifacts.
+This guide does not explain the details of how to write circuits. It assumes the circuits are already written and available to the user via =nil; proof market. &#x20;
+
+This guide explains the pipelines for how proof generators and verifyers can use the circits and the artifacts.
 
 
 
