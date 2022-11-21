@@ -1,6 +1,6 @@
 # manual
 
-Please see the relevant manual pages below:
+Please see the relevant manual page below:
 
 * [Ciphers](ciphers.md)
 
