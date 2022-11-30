@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Crypto3](README.md)
+* [API](api.md)
 
 ## Guides
 
