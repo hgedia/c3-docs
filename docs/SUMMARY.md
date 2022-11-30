@@ -2,6 +2,10 @@
 
 * [Crypto3](README.md)
 * [API](api.md)
+* [DBMS-API](dbms-api/README.md)
+  * [Admin](dbms-api/admin.md)
+  * [Analyzer](dbms-api/analyzer.md)
+  * [aqlfunction](dbms-api/aqlfunction.md)
 
 ## Guides
 
